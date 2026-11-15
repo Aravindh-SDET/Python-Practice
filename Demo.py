@@ -3,4 +3,4 @@ name = "Aravindh"
 tests=['login','home','checkout','order']
 print("Hello "+name)
 for test in tests:
-    print("I am in test screen ",test)
+    print("I am in test screen",test)
