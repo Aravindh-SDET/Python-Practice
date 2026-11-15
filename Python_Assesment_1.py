@@ -128,17 +128,19 @@ else:
 #End of task 9
 #Task 10 - Calculate the electricity bill
 unit = int(input("Enter the number of units : "))
-first = unit-100
-cal_x = unit-first
-rate_1 = cal_x * 2
-second = first - 100
-cal_y = first - second
-rate_2 = cal_y * 3
-third = second - 100
-cal_z = second - third 
-rate_3 = cal_z * 5
-default = third
-rate_4 = default * 7
-total_rate = rate_1 + rate_2 + rate_3 + rate_4
-print("The total rate for the given unit",unit,"is : ",total_rate)
+if(unit>=0 and unit<=100):
+    rate = unit * 2
+    print("The total rate for the given unit",unit,"is : ",rate)
+elif(unit>=101 and unit<=200):
+    bal = unit - 100
+    rate = 200 + bal * 3
+    print("The total rate for the given unit",unit,"is : ",rate)
+elif(unit>=201 and unit<=300):
+    bal = unit - 200
+    rate = 500 + bal * 5
+    print("The total rate for the given unit",unit,"is : ",rate)
+else:
+    bal = unit - 300
+    rate = 1000 + bal * 7
+    print("The total rate for the given unit",unit,"is : ",rate)
 #End of Task 10
