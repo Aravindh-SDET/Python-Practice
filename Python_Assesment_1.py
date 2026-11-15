@@ -71,7 +71,8 @@ net_salary = gross_salary-deduction
 print("Your net salary is :",net_salary)
 annual_net_salary = (gross_salary*12)-(deduction*12)
 print("Your annual net salary is :",annual_net_salary)
-monthly_salary = net_salary-(10/100)
+tax = gross_salary*(10/100)
+monthly_salary = net_salary-tax
 print("Your monthly salary is :",monthly_salary)
 #printing all the salary details
 #Task 6
@@ -98,7 +99,7 @@ else:
 #End of Task 7
 #Task 8 - Grade identifier
 student_mark = int(input("Enter the mark : "))
-if(student_mark<=100):
+if(student_mark >=0 and student_mark<=100):
     if(student_mark>=90):
         print("A grade")
     elif(student_mark>=80 and student_mark<=89):
@@ -118,9 +119,9 @@ else:
 number_1 = int(input("Enter the number 1 : "))
 number_2 = int(input("Enter the number 2 : "))
 number_3 = int(input("Enter the number 3 : "))
-if(number_1 > number_2 and number_1 > number_3):
+if(number_1 >= number_2 and number_1 >= number_3):
     print("Number 1",number_1,"is bigger")
-elif(number_2 > number_1 and number_2 > number_3):
+elif(number_2 >= number_1 and number_2 >= number_3):
     print("Number 2",number_2,"is bigger")
 else:
     print("Number 3",number_3,"is bigger")
